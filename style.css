@@ -1,0 +1,670 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 ;
+  padding: 0 ; 
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ 
+body {
+    background-color: azure;
+    background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: auto;
+    overflow-x: hidden;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+header {
+    background-color: hwb(229 49% 16%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.6em 2em ;
+    margin: 0 auto;
+    width: 100%;
+}
+/*.make h3 {
+    color: aliceblue;
+    position: absolute;
+    margin-left: 50.6em;
+    bottom: -2.5em;
+    font-weight: 900;
+    font-size: 1.3em;
+    text-shadow: 0.06em 0.06em #000000;
+}*/
+.logo {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    letter-spacing: 0.12em;
+    font-weight: 870;
+    font-size: 1.8rem sans-serif;
+    text-shadow: 0.06em 0.06em #000000;
+    animation: go 7s ease-in-out infinite;
+    transform: scale(1.1);
+}
+@keyframes go {
+    0% {color:black;}
+    25% {color: blue;}
+    50% {color: green;}
+    100% {color: red;}
+}
+.navigate a{
+    color: hsl(0, 50%, 52%);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 2em;
+    justify-content: space-between;
+    transition: all 0.7s ease-in-out;
+}
+.navigate a:hover {
+    color:blue ;
+    transform: scale(1.1);
+}
+.main {
+    margin-left: 10em;
+}
+.main span{
+    color: darkgray;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 0.6em;
+    text-shadow: 0.06em 0.06em #000000;
+}
+.main  span {
+    color:hwb(25 0% 0%);
+    margin-top: 0.3em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 0.17em 0.17em #000000;
+}
+.name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ad3d3d;
+    margin-left: 19em;
+    position: relative;
+    top: 5em;
+    text-shadow: 0.12em 0.12em #000000;
+    animation:come 7s ease-in-out infinite ;
+    transform:scale(1.1) ;
+}
+@keyframes come {
+    0% {color: aliceblue;}
+    25% {color: #ad3d3d;}
+    50% {color: yellow;}
+    100% {color: aqua;}
+}
+.main-btn{
+    text-decoration: none;
+    color: #000000;
+    margin-top: 8em;
+    margin-left: 29em;
+    background-color: whitesmoke;
+    font-size: 0.9rem;
+    font-weight: 100;
+    display: inline-block;
+    padding: 0.9376em 2.1875;
+    border-radius: 0.3em;
+    border: 1px solid black;
+    padding: 0em 0.3em;
+    letter-spacing: 0.0125em;
+    transition: all 0.7s ease-in-out;
+}
+.main-btn:hover {
+	transform: scale(1.1);
+    background-color: lightskyblue;
+}
+.main p {
+    position: relative;
+    margin-left: 27em;
+    top: 1em;
+    padding: 0.1em;
+    background-color: white;
+    width: 9.3em;
+    border-radius: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    animation: win 7s ease-in-out infinite;
+    transform: scale(1.1);
+}
+@keyframes win {
+    0% {color: hwb(0 15% 19%);}
+    25% {color: blue;}
+    50% {color: green;}
+    75% {background-color: hsl(175, 38%, 72%);}
+    100% {color: black;}
+}
+.social-icons  {
+    font-weight: 600;
+    margin-top: 1em;
+    margin-left: 15em;
+    border-radius: 0.9em;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0em 0.5em;
+    transition:all  7s ease-in-out;
+}
+.social-icons :hover {
+    transform: scale(1.1);
+}
+.back {
+    position: relative;
+    top: -5em;
+}
+.field {
+    position: relative;
+    width: 25em;
+    max-height: 14em;
+    border-radius: 50%;
+    margin-left: 29.9em;
+    margin-top: 2em;
+}
+.back h3  {
+    margin-left: 27em;
+    bottom: -.7em;
+    color: #f81212;
+    font-size: 1.4em;
+    position: relative;
+}
+.back p {
+    width: 25em;
+    margin-left: 30em;
+    top: 1em;
+    position: relative;
+    background-color: lightgray;
+    padding: 2.3em 1.1em;
+    text-align: justify;
+    justify-content: center;
+    border-radius: 0.6em;
+}
+.back  span {
+    left: 8em;
+    position: absolute;
+    top: 1em;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: darkgreen;
+}
+.box {
+    background-color: lightgray;
+    width: 21.25em;
+    box-shadow: 0.5px 25px rbga(111/15px);
+    border-radius: 0.6em;
+    margin-left: 5.6em;
+    margin-top: 2em;
+    padding: 2em;
+}
+.box h3{
+    margin-left: 4em;
+    margin-top: -1.5em;
+}
+    .box h3 span{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-shadow: 0.11em 0.030em  black;
+        color: orange;
+        margin-left: -2%;
+        width: 12.5em;
+        padding-top: 0.31em;
+        padding: 0.12em 0.18em;
+        background-color: rgb(205, 194, 194);
+        border-radius: 0.9em;
+        letter-spacing: 0.06em;
+}
+    .move {
+        position: relative;
+        left: 26em;
+        top: -5.5em;
+    }
+    .will {
+        position: relative;
+        left: 5em;
+        top: -5.5em;
+    }
+    .move h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 8em;
+        color: #e81414;
+        top: .6em;
+        position: relative;
+    }
+    .job {
+        position: relative;
+        left: 26em;
+        top: -4em;
+    }
+    .act  {
+        margin-left: 5.5em;
+        margin-top: 1.8em;
+        background-color:lightgray ;
+        width: 21.25em;
+        padding: 1em;
+        text-align: justify;
+        border-radius: 1em;
+        transition: 0.7s ease-in-out;
+}
+    .act:hover {
+        transform: scale(1.1);
+}
+
+    .act h3 span{
+        margin-left: 6.3em;
+        margin-top: -1em;
+        color: hsl(243, 84%, 32%);
+        text-shadow: 0.06em 0.06em #000000 ;
+        letter-spacing: 0.18em;
+        padding: 0.06em 0,9em;
+        border-radius: 0.3em;
+        background-color: rgb(192, 192, 243);
+}
+    .now {
+        position: relative;
+        left: 26em;
+        top: -5em;
+    }
+    
+    .now h4 {
+       margin-left: 7.8em;
+       margin-bottom: 0.6em;
+       color: hsl(0, 89%, 46%);
+       font-weight: 900;
+       font-size: 1.5rem;
+       position: relative;
+       text-shadow: 0.06em 0.06em #000000;
+       margin-top: 1.2em;
+    }
+    .work {
+        background-color: lightgray;
+        width: 21.25em;
+        padding: 1.2em;
+        border-radius: 1em;
+        margin-top: 1.6em;
+        margin-left: 5.6em;
+        transition: 0.7s ease-in-out;
+}
+    .work h3 {
+        color: #f09e06;
+        margin-left: 3em;
+        margin-bottom: 0.6em;
+        width: 10.6em;
+        text-align: center;
+        padding: 0.06em ;
+        text-shadow: 0.06em 0.06em #000000;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 0.9em;
+        background-color: bisque;
+}
+    .work:hover {
+        transform: scale(1.1);
+    }
+    .work p{
+    text-align: justify;
+    }
+    .work,h3, p {
+        margin-bottom: 0.3em;
+    }
+    .got {
+        margin-left: 8em;
+        color: hwb(0 12% 15%);
+        text-shadow: 0.06em 0.06em #000000;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 3em;
+}
+
+.ya {
+    color: hwb(0 11% 14%);
+    margin-left: 7.5em;
+    margin-top: 0.5em;
+    float: left;
+}
+.ya h2 {
+    margin-left: 3em;
+    font-size: 1.4rem;
+}
+.ya span {
+    margin-left: 5.6em;
+    color: #618d1e;
+}
+.ya span {
+    padding-left: 0.3em;
+    padding-bottom: 0.4em;
+}
+.will {
+    left: 26em;
+}
+.here {
+    background-color: lightgray;
+    padding: 1.3em ;
+    width: 21.25em;
+    text-align: center;
+    margin-left: 5.6em;
+    text-align: center;
+    top: 0.5em;
+    height: 11em;
+    border-radius: 0.6em;
+    transition:0.7s ease-in-out;
+}
+.here:hover {
+    transform: scale(1.1);
+}
+.star  {
+    margin-top: 1em;
+    position: relative;
+    color: #f11111;
+    left: 7em;
+}
+.star span {
+    position: relative;
+    top: 1.3em;
+    color: white;
+    left: -7.9em;
+    font-weight: 100;
+    font-size: 0.6rem;
+}
+.here p{
+    color: black;
+    text-align: justify;
+}
+.here h3 {
+    margin-left: 1.9em;
+    position: relative;
+    bottom: .3em;
+    color: green;
+    text-shadow: 0.09em 0.09em #000000;
+    width: 11.2em;
+    text-align: center;
+    padding: 0em 0.06em;
+    border-radius:28%;
+    background-color: hsl(83, 34%, 74%);
+}
+
+.resume {
+    margin-left: 9.5rem;
+    position: absolute;
+    top: 48rem;
+    width: 10rem;
+    text-justify: auto;
+    
+}
+.resume p {
+    position: absolute;
+    margin-left: 31.2em;
+    background-color: lightgray;
+    padding: 1em;
+    margin-top: -6.5em;
+    border-radius: 0.6em;
+    transition: 0.7s ease-in-out;
+}
+.resume p:hover {
+    transform: scale(1.1);
+}
+.resume h3 {
+    bottom: -27em;
+    margin-top: 1em;
+    position: absolute;
+    margin-left: 30em;
+    text-align: center;
+    color: hwb(0 11% 14%);
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    }
+    .address {
+        top: -4em;
+        position: relative;
+        background-color: lightgray;
+        text-align: center;
+        width: 21.25em;
+        padding: 1.1em;
+        left: 32em;
+        border-radius: 0.6em;
+        transition: 0.7s ease-in-out;
+}
+.address:hover {
+    transform: scale(1.1);
+}
+.address span {
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-left: 1.8em;
+}
+.address p {
+    margin-left: -1.5em;
+    position: relative;
+    min-height: 0.1em;
+}
+@media    (max-width: 360px)
+  {
+    body {
+        overflow-x: hidden;
+        margin: 0;
+    }
+    header {
+        position: fixed !important;
+        z-index: 999;
+        margin: 0;
+        width: 95%;
+        display: block;
+        padding: 0.3em;
+        height: fit-content;
+    }
+    .logo{
+        left: 13em;
+        position: relative;
+        font-weight: 600;
+        font-size: 0.7rem;
+        top: 0.2em;
+    }
+        .navigate a{
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.7rem;
+            top: -0.1em;
+            left: 4em;
+            position: relative;
+        }
+        .name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            position: relative;
+            right: 20em;
+            top: 5em;
+        }
+        .main-btn {
+            font-size: 0.9rem;
+            font-weight: bold;
+            top: -2.5em;
+            position: relative;
+            right: 30em;
+            justify-content: baseline;
+        }
+        .main p {
+            position: relative;
+            font-size: 0.7rem;
+            right: 30em;
+            top: -1.5em;
+        }
+        .main span {
+            font-size: .9rem;
+        }
+        .social-icons {
+            position: relative;
+            font-size: 1.4rem;
+            right: 15em;
+            top: -1em;
+        }
+        .job {
+            margin-left: -3.4em;
+        }
+        .now {
+            position: relative;
+            left: 2em;
+            top: 19em;
+        }
+        .move {
+            position: relative;
+            left: -0.1em;
+            bottom: 4em;
+        }
+        .move h2 {
+            font-size: 1rem;
+            font-weight: 900;
+            top: 2em;
+        }
+        .got {
+            font-size: 0.5rem;
+            font-weight: 600;
+            margin-top: -37.5em;
+            margin-left: 8.8em;
+        }
+        .box h3 span {
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        .box {
+            padding: 1em 0.5em;
+            width: 17em;
+            position: relative;
+            left: -3em;
+            top: 1em;
+        }
+        .box p {
+            font-size: 0.7rem;
+            font-weight: 500;
+            align-items: center;
+            text-align: center;
+        }
+        .act  {
+            position: relative;
+            font-size: 0.7rem;
+            margin-left: 6.8em;
+        }
+        .now h4 {
+            font-size: 1em;
+            font-weight: 800;
+            margin-left: 7em;
+        }
+        .work {
+            font-size: 0.7em;
+            margin-left: 6.8em;
+            width: 25em;
+            position: relative;
+            margin-left: 0.4em;
+        }
+        .work h3 {
+            position: relative;
+            margin-left: 1.6em;
+        }
+        .title {
+            position: relative;
+             font-size: 1em;
+            font-weight: 900;
+            color: rgba(255, 15, 15, 0.973);
+            top: 1.8em;
+            left: -1em;
+        }
+        .card {
+            width: 14.75em;
+            margin-left: 4.8em;
+            padding:1em ;
+            position: relative;
+            height: 8em;
+        }
+        .info p {
+            font-size: 0.7em;
+            
+        }
+        .info h3 span {
+            font-size: 0.7em;
+        }
+        .address {
+            top: 20em;
+            font-size: 0.8em;
+            position: relative;
+            left: 3.5em;
+        }
+        .here h2  {
+            font-size: 0.7em;
+            bottom: 3.9em;
+            position: relative;
+            left: 3em;
+            color: #ef1111;
+            font-weight: 900;
+        }
+        .will {
+            position: relative;
+            top: 7em;
+            left: -2.2em;
+        }
+        .star {
+            left: 10em;
+            font-size: 1em;
+            font-weight: 900;
+            position: relative;
+            top: 5em;
+        }
+        .here span {
+            bottom: 4em;
+            left: 4em;
+            position: relative;
+            color: white;
+        }
+        .here {
+            width: 25em;
+            height: auto;
+            position: relative;
+            left: 1em;
+            top: 7.6em;
+            font-size: 0.7em;
+            text-align: justify;
+        }
+        .here h3 {
+            font-size: 1.2em;
+            font-weight: 900;
+            bottom: 0.3em;
+            position: relative;
+            left: 2em;
+        }
+        .here p {
+            top: 0.6em;
+            position: relative;
+            left: 2.4em;
+        }
+        .star span {
+            position: relative;
+            font-size: 0.9em;
+            left: -7em;
+        }
+        .field {
+            margin-left: 2em;
+            border-radius: 50%;
+            height: auto;
+            width: 16.5em;
+            border-radius: 50%;
+            position: relative;
+        }
+        .back {
+            position: relative;
+            top: 16em;
+            left: 1.5em;
+        }
+        .back h3 {
+             margin-left: 6em;
+             font-size: 1.1em;
+        }
+        .back p {
+            margin-left: 2em;
+            width: 25em;
+            font-size: 0.7em;
+        }
+    }
